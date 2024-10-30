@@ -5,14 +5,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Pupui!</title>
-    <link rel="stylesheet" href="Vanhoja%20versioita/Pupui2.css">
-    <style>    </style>
+    <link rel="stylesheet" href="Pupui3.css">
+    <style></style>
 
 </head>
 
 
 <body>
-<section1>
+<section1 id="home">
+
+<header>
+
 
     <div class="navbar">
 
@@ -20,16 +23,17 @@
             <img src="images/pupu1.jpg" alt="pupulogo" class="pupulogo">
 
             <div class="logoteksti">
-                Pupui
+                <h1>Pupui</h1>
             </div>
         </div>
 
         <div class="nappulaalue">
-            <div class="button"> Home </div>
-            <div class="button"> Puput </div>
-            <div class="button"> Contact </div>
+            <a class="button" href="#home"> Home </a>
+            <a class="button" href="#puput"> Puput </a>
+            <a class="button" href="#contact"> Contact </a>
         </div>
     </div>
+</header>
 
 
     <div class="otsikkoalue">
@@ -56,22 +60,25 @@
 
 </section1>
 
-<section2>
+<section2 id="puput">
+<h2 class="otsikko_puput">Puput</h2>
+<img src="images\levea_pupu2.jpg" alt="leveä pupu kuva" class="levea_kuva">
+
 
     <div class="pupuruudut">
 
-        <div class="pupuruutu">
-            <a class="kuva_alue1">
-                <img class="pupukuva" src="images/istuva_pupu.jpg">
-            </a>
 
+        <div class="pupuruutu">
             <h class="kuvaotsikko1">
                 Istuva pupu
             </h>
 
-            <h class="kuvaotsikko2">
-                Pupu istuu maassa.
-            </h>
+
+                <figure class="kuva_alue1">
+                <img class="pupukuva" src="images/istuva_pupu.jpg" alt="istuva pupu">
+                <figcaption class="figcaption">Pupu istuu maassa.</figcaption>
+                </figure>
+
 
             <p class="kuvateksti1">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequuntur doloremque doloribus ea excepturi facilis fuga illum in laborum officiis, perspiciatis possimus quam qui quisquam repellat unde velit veritatis voluptate?
@@ -79,48 +86,41 @@
             </p>
         </div>
 
-        <a class="pupuruutu">
-            <div class="kuva_alue1">
-                <img class="pupukuva" src="images/littea_pupu.jpg" alt="Litteö pupu">
-            </div>
-
+        <div class="pupuruutu">
             <h class="kuvaotsikko1">
                 Litteä pupu
             </h>
-
-             <h class="kuvaotsikko2">
-                Litteä pupu on litteä.
-            </h>
-
+            <figure class="kuva_alue1">
+                <img class="pupukuva" src="images/littea_pupu.jpg" alt="Litteä pupu">
+                <figcaption class="figcaption">Litteä pupu on litteä.</figcaption>
+            </figure>
 
             <p class="kuvateksti1">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, quam, rem. Accusamus ad aliquid at commodi deleniti dignissimos eaque excepturi itaque laborum molestiae non, nulla quam quisquam sequi ullam ut.
             </p>
-        </a>
+        </div>
 
 
-        <a class="pupuruutu">
-            <div class="kuva_alue1">
-                <img class="pupukuva" src="images/toimisto_pupu.jpg">
-            </div>
+        <div class="pupuruutu">
 
             <h class="kuvaotsikko1">
                 Toimistopupu
             </h>
 
-            <h class="kuvaotsikko2">
-                Toimistopupu ei asu toimistolla.
-            </h>
+            <figure class="kuva_alue1">
+                <img class="pupukuva" src="images/toimisto_pupu.jpg" alt="toimisto pupu">
+                <figcaption class="figcaption">Toimistopupu ei asu toimistolla.</figcaption>
+            </figure>
 
             <p class="kuvateksti1">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi autem dolore ea eos, excepturi labore laboriosam modi nobis officiis perferendis placeat quasi qui quia ratione reprehenderit tempora tempore vitae.
             </p>
-        </a>
+        </div>
 
 
          <a class="pupuruutu">
             <div class="kuva_alue1">
-                <img class="pupukuva" src="images/pieni_pupu.jpg">
+                <img class="pupukuva" src="images/pieni_pupu.jpg" alt="pieni pupu">
             </div>
 
             <h class="kuvaotsikko1">
@@ -160,7 +160,7 @@
 
         <a class="pupuruutu">
             <div class="kuva_alue1">
-                <img class="pupukuva" src="images/Oranssi_pupu.jpg">
+                <img class="pupukuva" src="images/Oranssi_pupu.jpg" alt="oranssi pupu">
             </div>
 
             <h class="kuvaotsikko1">
@@ -185,34 +185,27 @@
 
 </section2>
 
-<section3>
+<section3 id="contact">
+<h2 class="contact_otsikko">Yhteystiedot</h2>
 
 <div class="columnx2">
-
-    <div class="column21">
-        <div class="yhteystiedot">
-            Tule käymään: <br>
-            Pupui  <br>
-            Karaportti 2  <br>
-            02340 ESPOO  <br>
-            Finland  <br>
-            Sposti: pupu@pupui.fi  <br>
-            Puh: 123 456 7890  <br>
-        </div>
+    <div class="yhteystiedot">
+        Tule käymään: <br>
+        Pupui  <br>
+        Karaportti 2  <br>
+        02340 ESPOO  <br>
+        Finland  <br>
+        Sposti: pupu@pupui.fi  <br>
+        Puh: 123 456 7890  <br>
     </div>
 
+    <div class="karttaalue">
+        <img src="images/kartta1.png" alt="kartta" class="kartta">
 
-    <div class="column22">
-        <div class="karttaalue">
-            <img src="images/kartta1.png" alt="kartta" class="kartta">
-
-        </div>
     </div>
-
 </div>
+
 </section3>
-
-
 
 </body>
 </html>
