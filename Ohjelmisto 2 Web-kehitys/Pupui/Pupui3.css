@@ -1,14 +1,27 @@
+/*
+värit:
+#000000
+#14213D
+#FCA311
+#E5E5E5
+#FFFFFF
+#0075C4
+#f1f0ea
+
+*/
 html{
     scroll-behavior: smooth;
 }
 
 body {
 
-    background: linear-gradient(rgba(0, 0, 255, 1), rgba(0, 255, 0, 1));
-    margin-left: 5rem;
+    background: linear-gradient(#14213D, #0075C4);
+    width: 80%;
+    margin: auto;
+   /* margin-left: 5rem;
     margin-right: 5rem;
     margin-top: 5rem;
-    margin-bottom: 5rem ;
+    margin-bottom: 5rem ; */
 }
 
 header {
@@ -20,7 +33,7 @@ header {
     padding: 0rem;
     margin: 0rem;
     /* place-self: right; */
-    background: green;
+    background: #000000;
     display: inline-flex;
     width: 100%;
     height: 8rem;
@@ -39,15 +52,14 @@ header {
     width: auto;
     height: 100%;
     display: block;
+    filter: grayscale(100%);
 }
 
 .logoteksti {
     position: absolute;
-    bottom: 8px;
-    left: 8px;
-    color: white;
-    outline-color: black;
-    outline-width: thick;
+    bottom: -20px;
+    left: 6px;
+    color: darkorange;
 
 }
 
@@ -62,10 +74,9 @@ header {
     height: 100%;
     width: 33.33%;
 
-    background-color: red;
-    /* border: none; */
-    /*border-color: red ; */
-    color: white;
+    background-color: #FCA311;
+
+    color: #F1F0EA;
     padding: 0;
     text-align: center;
     font-size: 2rem;
@@ -73,6 +84,9 @@ header {
     opacity: 1;
     text-decoration: none;
     cursor: pointer;
+    border:solid black 1px;
+    box-sizing: border-box;
+
 }
 
 .button:hover {
@@ -81,16 +95,21 @@ header {
     transition: 0.3s;
 }
 
+section1 {
+    padding-bottom: 10rem;
+
+}
 
 .otsikkoalue {
     WIDTH: 100%;
-    BACKGROUND-COLOR: white;
+    /* BACKGROUND-COLOR: #14213D; */
 }
 
 .otsikko1 {
     text-align: center;
     font-size: 6rem;
     font-family: arial, bold, serif;
+    color: #FCA311;
 
 }
 
@@ -98,6 +117,7 @@ header {
     text-align: center;
     font-size: 3rem;
     width: 100%;
+    color: #FCA311;
 }
 
 
@@ -106,7 +126,7 @@ header {
     width: 100%;
     place-content: center;
     place-items: center;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 
 }
 
@@ -123,30 +143,36 @@ header {
     padding: 2rem;
     font-size: 2rem;
     bottom-margin: 5rem;
+    color: #F1F0EA;
 
 }
 
 section2 {
-    margin-top: 10rem;
-    padding-top: 20rem;
+    display: block;
+    padding-top: 10rem;
 }
 
 .otsikko_puput {
     text-align: center;
     font-size: 3rem;
+    color: #FCA311;
     width: 100%;
-    padding-top: 10rem;
+    padding: 1rem;
+    background-color: #000000;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .levea_kuva {
     width: 100%;
+
 
 }
 
 
 
 .pupuruudut {
-    background-color: yellow;
+    /* background-color: yellow; */
     /* background-size: cover; */
     width: 100%;
     display: flex;
@@ -163,7 +189,7 @@ section2 {
     height: 50rem;
     width: 30%;
     margin: 1rem;
-    background-color: aqua;
+    background-color: #E5E5E5;
     padding: 1rem;
     /* place-self: center; */
     box-shadow: 2rem 2rem 1rem rgba(0,0,0,50%);
@@ -176,12 +202,15 @@ section2 {
 
 .pupuruutu:hover {
     background-color: white;
+    /* border: solid, #FCA311; */
 
-    /* Koon muuttuminen hyvä vai ei? */
+
 }
 
 .figcaption {
-    padding-left: 5rem;
+    text-align: center;
+    font-size: 1rem;
+
 }
 
 .kuva_alue1 {
@@ -189,20 +218,22 @@ section2 {
     /*background-size: auto; */
     /*place-self: auto; */
     /* position: static; */
-    padding: 1rem;
+    padding: 0rem;
     /* display: inherit; */
     overflow: hidden;
-    margin: 0;
+    margin: 0rem;
+    place-self: center;
 }
 
 
 .pupukuva {
     height: 15rem;
     width: 18rem;
-    padding: 1rem;
-    position: static;
+    padding: 0rem;
+    /* position: static; */
     /* display: inherit; */
     place-self: center;
+
 }
 
 
@@ -237,35 +268,43 @@ section2 {
     position: static;
     /* display: inherit; */
     overflow: hidden;
+    font-size: 1.2rem;
 
 }
 
 
 
 section3 {
-    margin-top: 10rem;
+    padding-top: 10rem;
     display: block;
-    margin-bottom: 50rem;
-    height: 100%;
+    padding-bottom: 40rem;
+
 }
 
 .contact_otsikko {
     text-align: center;
     font-size: 3rem;
+    color: #FCA311;
     width: 100%;
-    padding-top: 10rem;
+    margin:0;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    /* padding-top: 10rem; */
+    background-color: #000000;
 
 }
 
 .columnx2 {
     display: flex;
     flex-wrap: wrap;
+
 }
 
 
 .yhteystiedot {
     font-size: 3rem;
-    background-color: yellow;
+    color: #F1F0EA;
+    /*background-color: yellow; */
     width: 40%
 }
 
@@ -276,39 +315,5 @@ section3 {
      padding: 0rem;
      box-shadow: 2rem 2rem 1rem rgba(0,0,0,50%);
  }
-
-
-
-
-
-#testi1 {
-    color: green;
-    background: linear-gradient(rgba(255, 0, 0, 1), rgba(255, 0, 0, 0));
-
-}
-
-#testi2 {
-    color: darkred;
-    font-size: 1.5rem;
-    font-family: Arial, sans-serif;
-}
-
-#testikappale1 {
-    height: 200px;
-    background: red;
-    backbround-size: cover;
-    animation: animaatio1 10s infinite;}
-
-    #testikappaletyyli2 {
-    background: red;
-    backbround-size: cover;
-    animation: animaatio1 10s infinite;}
-
-    @keyframes animaatio1 {
-    from {background-color: red;}
-    to {background-color: blue;}
-     }
-
-
 
 
