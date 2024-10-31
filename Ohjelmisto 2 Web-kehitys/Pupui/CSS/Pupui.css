@@ -11,7 +11,7 @@ värit:
 */
 @font-face {
     font-family: "fontti1";
-    src: url("fonts/Mulish-VariableFont_wght.ttf")
+    src: url("../fonts/Mulish-VariableFont_wght.ttf")
     format('truetype');
 }
 
@@ -101,7 +101,7 @@ header {
 }
 
 #home {
-    padding-top: 5rem;
+    padding-top: 0rem;
 
 
 }
