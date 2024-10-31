@@ -78,11 +78,9 @@ header {
     display: inline-block;
     height: 100%;
     width: 33.33%;
-
     background-color: #FCA311;
-
     color: #000000;
-    padding: 0;
+    padding: 2rem 0 0 0;
     text-align: center;
     font-size: 2rem;
     margin: 0 0;
@@ -95,8 +93,7 @@ header {
 }
 
 .button:hover {
-    background-color: black;
-    opacity: 0.5;
+    opacity: 30%;
     transition: 0.3s;
 }
 
