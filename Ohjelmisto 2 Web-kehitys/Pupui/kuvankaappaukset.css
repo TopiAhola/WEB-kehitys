@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "fontti1";
+    src: url("fonts/Mulish-VariableFont_wght.ttf")format('truetype');
+}
+
+body {
+    background: linear-gradient(deepskyblue, darkgreen);
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.fonttiesimerkki_alue {
+    display: block;
+    background: yellowgreen;
+    padding: 1rem;
+}
+
+
+
+.esimerkki1 {
+    font-family: arial sans-serif;
+
+}
+
+.esimerkki2 {
+    font-family: fontti1;
+
+}
+
+.linkit_alue {
+    background: yellowgreen;
+    padding: 1rem;
+}
+
+.kolme_kuvaa_alue {
+    display: block;
+    background: rgba(176, 196, 222, 0.5);
+    padding: 1rem;
+
+}
+
+.kuva_alue {
+    width: 33%;
+    height: auto;
+
+}
+
+figure {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+
+}
+
+figure img {
+    height: 500px
+}

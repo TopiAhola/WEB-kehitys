@@ -2,17 +2,60 @@
 <html lang="en">
 
 <head>
+    <title>Kuvankaappaukset</title>
     <meta charset="UTF-8">
     <title>Title</title>
-
+    <link rel="stylesheet" href="kuvankaappaukset.css">
 
 </head>
 
 
 <body>
+<h1>HTML & CSS tehtävän palautus</h1>
+<div class="fonttiesimerkki_alue">
+    <p>Pupui!-sivulla käytetty fontti on Mulish:</p>
+    <pre>@font-face {
+    font-family: "fontti1";
+    src: url("fonts/Mulish-VariableFont_wght.ttf")
+    format('truetype'); } </pre>
+    <p class="esimerkki1">Tämän tekstin fontti on Arial.</p>
+    <p class="esimerkki2">Tämän tekstin fontti on Mulish</p>
+
+</div>
+
+<div class="linkit_alue">
+    <p>Linkit kuviin:</p>
+    <a href="images/wave_evaluation1.png">Kontrastitesti</a>
+    <a href="images/HTML_checker1.png">HTML validator</a>
+    <a href="images/lighthouse1.png">Lighthouse</a>
+</div>
 
 
 
+<div class="kolme_kuvaa_alue">
+    <p>Kuvankaappaukset:</p>
+
+    <div class="kuva_alue">
+    <figure>
+    <img src="images/wave_evaluation1.png" alt="wave evaluation">
+        <figcaption>Wave contrast-evaluation</figcaption>
+    </figure>
+    </div>
+
+    <div class="kuva_alue">
+    <figure>
+    <img src="images/HTML_checker1.png" alt="HTLM checker">
+        <figcaption>HTML checker</figcaption>
+    </figure>
+    </div>
+
+    <div class="kuva_alue">
+    <figure>
+    <img src="images/lighthouse1.png" alt="Lighthouse score">
+        <figcaption>Lighthouse score</figcaption>
+    </figure>
+    </div>
+</div>
 
 </body>
 

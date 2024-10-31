@@ -292,6 +292,7 @@ header {
 }
 
 .contact_otsikko {
+    box-sizing: border-box;
     text-align: center;
     font-size: 3rem;
     color: #FCA311;
