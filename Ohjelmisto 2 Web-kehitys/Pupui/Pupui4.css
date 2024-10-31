@@ -1,0 +1,331 @@
+/*
+värit:
+#000000
+#14213D
+#FCA311
+#E5E5E5
+#FFFFFF
+#0075C4
+#f1f0ea
+
+*/
+@font-face {
+    font-family: "fontti1";
+    src: url("fonts/Mulish-VariableFont_wght.ttf")
+    format('truetype');
+}
+
+html{
+    scroll-behavior: smooth;
+
+
+}
+
+body {
+    font-family: fontti1;
+    background: linear-gradient(#14213D, #0075C4);
+    width: 80%;
+    margin: auto;
+
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    padding: 0rem;
+    margin: 0rem;
+    /* place-self: right; */
+    background: #000000;
+    display: inline-flex;
+    width: 100%;
+    height: 8rem;
+
+
+
+}
+
+.logoalue   {
+    width: 50%;
+    position: relative;
+
+}
+
+.pupulogo {
+    width: auto;
+    height: 100%;
+    display: block;
+    filter: grayscale(100%);
+}
+
+.logoteksti {
+    position: absolute;
+    bottom: 0px;
+    left: 6px;
+    color: darkorange;
+
+}
+
+
+.nappulaalue {
+    width: 50%;
+    display: inline-flex;
+}
+
+.button {
+    display: inline-block;
+    height: 100%;
+    width: 33.33%;
+
+    background-color: #FCA311;
+
+    color: #000000;
+    padding: 0;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 0;
+    opacity: 1;
+    text-decoration: none;
+    cursor: pointer;
+    border:solid black 1px;
+    box-sizing: border-box;
+
+}
+
+.button:hover {
+    background-color: black;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+#home {
+    padding-top: 5rem;
+
+
+}
+
+.otsikkoalue {
+    WIDTH: 100%;
+    padding-top: 10rem;
+    /* BACKGROUND-COLOR: #14213D; */
+}
+
+.otsikko1 {
+    text-align: center;
+    font-size: 6rem;
+    font-family: arial, bold, serif;
+    color: #FCA311;
+    margin: 0;
+    padding: 1rem;
+
+}
+
+.otsikko2 {
+    text-align: center;
+    font-size: 3rem;
+    width: 100%;
+    color: #FCA311;
+}
+
+
+
+.etusivukuvaalue {
+    width: 100%;
+    place-content: center;
+    place-items: center;
+    /* background-color: blueviolet; */
+
+}
+
+
+.etusivukuva {
+    height: 300px;
+    /* width: 40%; */
+    display: block;
+    /*box-shadow: 0rem 0rem 10000rem red ; */
+
+}
+
+.etusivuteksti {
+    padding: 2rem;
+
+    font-size: 2rem;
+    bottom-margin: 5rem;
+    color: #F1F0EA;
+
+
+}
+
+#puput {
+    display: block;
+    /* padding-top: 10rem; */
+}
+
+.otsikko_puput {
+    text-align: center;
+    font-size: 3rem;
+    color: #FCA311;
+    width: 100%;
+    padding: 1rem;
+    background-color: #000000;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.levea_kuva {
+    width: 100%;
+
+
+}
+
+
+.pupuruudut {
+    /* background-color: yellow; */
+    /* background-size: cover; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* place-content: center; */
+    /*place-content: center; */
+    /*place-self: center; */
+
+}
+
+.pupuruutu {
+
+    /* float: left; */
+    height: 50rem;
+    width: 30%;
+    margin: 1rem;
+    background-color: #E5E5E5;
+    padding: 1rem;
+    /* place-self: center; */
+    box-shadow: 2rem 2rem 1rem rgba(0,0,0,50%);
+    cursor: pointer;
+     /* transition: width 2s, margin 2s, height 2s; */
+    border-radius: 2rem;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.pupuruutu:hover {
+    background-color: white;
+    /* border: solid, #FCA311; */
+
+
+}
+
+.figcaption {
+    text-align: center;
+    font-size: 1rem;
+
+}
+
+.kuva_alue1 {
+    /*background-color: red; */
+    /*background-size: auto; */
+    /*place-self: auto; */
+    /* position: static; */
+    padding: 0rem;
+    /* display: inherit; */
+    overflow: hidden;
+    margin: 0rem;
+    place-self: center;
+}
+
+
+.pupukuva {
+    /*height: 15rem;
+    width: 18rem; */
+    padding: 0rem;
+    height: 200px;
+    width: 200px;
+    /* position: static; */
+    /* display: inherit; */
+    place-self: center;
+
+}
+
+
+.kuvaotsikko1 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: arial, sans-serif, bold;
+    padding: 1rem;
+    /* position: static; */
+    /* display: inherit; */
+    overflow: hidden;
+    margin: 0;
+    place-self: center;
+    display: block;
+
+}
+
+.kuvaotsikko2 {
+    text-align: center;
+    font-size: 1rem;
+    font-family: arial, sans-serif, bold;
+    margin: 0;
+    display: block;
+}
+
+
+
+.kuvateksti1 {
+     /* text-align: center; */
+    margin: 0rem;
+    padding: 1rem;
+    position: static;
+    /* display: inherit; */
+    overflow: hidden;
+    font-size: 1.2rem;
+
+}
+
+
+
+#contact {
+    padding-top: 10rem;
+
+}
+
+.contact_otsikko {
+    text-align: center;
+    font-size: 3rem;
+    color: #FCA311;
+    width: 100%;
+    margin:0;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    /* padding-top: 10rem; */
+    background-color: #000000;
+
+}
+
+.columnx2 {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.yhteystiedot {
+    font-size: 3rem;
+    color: #F1F0EA;
+    /*background-color: yellow; */
+    width: 40%
+}
+
+
+ .kartta {
+
+     width: 100%;
+     padding: 0rem;
+     box-shadow: 2rem 2rem 1rem rgba(0,0,0,50%);
+ }
+
+footer {
+    padding-top: 30rem;
+}
