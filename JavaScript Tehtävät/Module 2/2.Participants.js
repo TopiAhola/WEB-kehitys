@@ -19,14 +19,32 @@ for (let n = 0; n < number; n++) {
 }
 osallistujat.sort()
 
+//Lisätään sivulle ol elementti ja annetaan sille id
+let ordered_list = document.createElement("ol");
+ordered_list.setAttribute("id", "lista");
+document.getElementById("tuloste").appendChild(ordered_list);
+
+//Lisätään rivejä ol listaan
+for (let n = 0; n < osallistujat.length; n++) {
+    let rivi = document.createElement("li");
+    rivi.innerHTML = osallistujat[n];
+    document.getElementById("lista").appendChild(rivi);
+  }
+
+
+
+/*
 let rivit = [];
+
   for (let n = 0; n < osallistujat.length; n++) {
     rivit.push(`<li>${osallistujat[n]}</li>`)
   }
 
-let tuloste = `<ul>${rivit}</ul>`;
 
+ei käytetä tätä
+let tuloste = `<ul>${rivit}</ul>`;
+*/
 document.querySelector(`#moduuli`).innerHTML = moduuli;
 document.querySelector('#tehtava').innerHTML = tehtava;
 document.querySelector('#tehtavananto').innerHTML = tehtavananto;
-document.querySelector('#tuloste').innerHTML = tuloste;
+//document.querySelector('#tuloste').innerHTML = tuloste;
