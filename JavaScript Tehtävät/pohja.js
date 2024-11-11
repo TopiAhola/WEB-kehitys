@@ -1,13 +1,19 @@
-/*
-
-
-*/
-
-
 'use strict';
+let moduuli = "Moduuli ";
+let tehtava = "Tehtävä ";
+let tehtavananto = `
+
+`
+
+
+
+
 
 console.log("Im printing to console");
-alert("ponnahdusikkuna!");
-
 const tuloste = "tulostetaan tämä";
-document.querySelector('#tulostusalue1').innerHTML = tuloste;
+
+//Tulostetaan moduuli, tehtävän numero ja tuloste sivulle:
+document.querySelector(`#moduuli`).innerHTML = moduuli;
+document.querySelector('#tehtava').innerHTML = tehtava;
+document.querySelector('#tehtavananto').innerHTML = tehtavananto;
+document.querySelector('#tuloste').innerHTML = tuloste;
