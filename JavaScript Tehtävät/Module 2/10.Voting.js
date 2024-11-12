@@ -56,13 +56,16 @@ for (let n = 0; n < voter_amount; n++) {
 
 //Järjestetään äänijärjestykseen ja tulostetaan:
 
-candidates.sort((b, a) => a.votes - b.votes);
+candidates.sort((a, b) => b.votes - a.votes);
 //Testaukseen: Toimii !
 console.log(candidates);
 
-let tuloste = `${candidates[0].name} on voittanut ${candidates[0].votes} äänellä.
-Tulokset:
-`
+let tuloste = `${candidates[0].name} on voittanut ${candidates[0].votes} äänellä. Tulokset konsolissa.`
+
+console.log(tuloste);
+for (let n = 0; n< candidates.length; n++) {
+  console.log(`${candidates[n].name}: ${candidates[n].votes} ääntä`);
+}
 
 
 //Tulostetaan moduuli, tehtävän numero ja tuloste sivulle:
