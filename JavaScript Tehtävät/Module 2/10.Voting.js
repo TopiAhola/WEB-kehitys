@@ -42,8 +42,7 @@ let candidates = [];
 
   }
 
-//Testaukseen:
-console.log(candidates);
+
 
 //Äänestäjien määrä
 let voter_amount = parseInt(prompt("Äänestäjien määrä: "));
@@ -57,11 +56,17 @@ for (let n = 0; n < voter_amount; n++) {
 
 //Järjestetään äänijärjestykseen ja tulostetaan:
 
+candidates.sort((b, a) => a.votes - b.votes);
+//Testaukseen: Toimii !
 console.log(candidates);
 
+let tuloste = `${candidates[0].name} on voittanut ${candidates[0].votes} äänellä.
+Tulokset:
+`
 
 
 //Tulostetaan moduuli, tehtävän numero ja tuloste sivulle:
 document.querySelector(`#moduuli`).innerHTML = moduuli;
 document.querySelector('#tehtava').innerHTML = tehtava;
 document.querySelector('#tehtavananto').innerHTML = tehtavananto;
+document.querySelector('#tuloste').innerHTML = tuloste;
