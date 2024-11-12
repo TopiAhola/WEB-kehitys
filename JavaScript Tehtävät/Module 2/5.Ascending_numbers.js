@@ -11,12 +11,27 @@ document.querySelector(`#moduuli`).innerHTML = moduuli;
 document.querySelector('#tehtava').innerHTML = tehtava;
 document.querySelector('#tehtavananto').innerHTML = tehtavananto;
 
-numbers = [];
-let number;
+//Ohjelma:
+let numbers = [];
+while (true) {
+   let number = parseFloat(prompt("Anna numero: "));
+   //Onko numero jo listassa:
+   if (numbers.includes(number))
+   {
+      console.log(`Number ${number} has already been given`);
+      break;
+   }
+   //Virhesyötettä ei laiteta listaan:
+   else   {
+      if (isNaN(number) === false) {
+         numbers.push(number);
+      }
 
+   }
+}
 
-if (number in numbers) {
-
-   number = prompt("Anna numero: ");
-   numbers.push(number);
+//Sortti ja tulostus:
+numbers.sort((a, b) => a - b);
+for (let n = 0; n < numbers.length; n++) {
+   console.log(numbers[n]);
 }
