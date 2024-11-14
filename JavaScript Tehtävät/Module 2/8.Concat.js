@@ -11,9 +11,11 @@ You can hardcode the array, no need for prompt().
 Print the result to HTML document.
 `
 //Funktio
+//Havainto: new_string pitää määritellä tyhjäksi stringiksi, muuten sen string arvo on "undefined"
+
 function concat(string_array) {
-  let new_string = string_array[0];
-  for(let n=1; n < string_array.length; n++) {
+  let new_string = "";
+  for(let n=0; n < string_array.length; n++) {
     new_string = new_string + string_array[n];
   }
 
