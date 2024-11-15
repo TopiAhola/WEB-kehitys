@@ -8,7 +8,39 @@
 let nappula = document.getElementById("start");
 nappula.addEventListener("click", funktio) ;
 
+
 function funktio() {
-  operation = document.getElementById("calculation").value;
+  let calculation = document.getElementById("calculation").value;
+  let calculation_string= calculation.toString().trim();
+
+  //Havaitaan laskutoimitus:
+  let operation;
+  if (calculation_string.includes("+")) {operation = "add"}
+  if (calculation_string.includes("-")) {operation = "sub"}
+  if (calculation_string.includes("*")) {operation = "multi"}
+  if (calculation_string.includes("/")) {operation = "div"}
+
+  //Tehdään oikea laskutoimitus ja splitataan numerot:
+  if (operation === "add") {
+    let numbers = calculation_string.split("+");
+    result =  parseFloat(numbers[0]) + parseFloat(numbers[1]);
+  }
+  else if (operation === "sub") {
+     let numbers = calculation_string.split("-");
+    result = parseFloat(numbers[0]) - parseFloat(numbers[1]);
+  }
+  else if (operation === "multi") {
+     let numbers = calculation_string.split("*");
+    result = parseFloat(numbers[0]) * parseFloat(numbers[1]);
+  }
+  else if (operation === "div") {
+     let numbers = calculation_string.split("/");
+    result = parseFloat(numbers[0]) / parseFloat(numbers[1]);
+  }
+  else {console.log("Operation error")
+  result = "Operation error";
+  }
+
   document.getElementById("result").innerText = result;
+
 }

@@ -19,19 +19,21 @@ function funktio(event){
   //testituloste:
   //document.getElementById("result").innerText = operation + num1 + num2 ;
 
-  if (operation == "add") {
+  if (operation === "add") {
     result = num1 + num2;
   }
-  else if (operation == "sub") {
+  else if (operation === "sub") {
     result = num1 - num2;
   }
-  else if (operation == "multi") {
+  else if (operation === "multi") {
     result = num1 * num2;
   }
-  else if (operation == "div") {
+  else if (operation === "div") {
     result = num1 / num2;
   }
-  else {console.log("Operation error")}
+  else {console.log("Operation error")
+  result = "Operation error";
+  }
 
   //pyöristys ja tulostus:
   result = result.toFixed(3);
