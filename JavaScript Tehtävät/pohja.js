@@ -9,7 +9,7 @@ let tehtavananto = `
 
 
 
-console.log("Im printing to console");
+
 const tuloste = "tulostetaan tämä";
 
 //Tulostetaan moduuli, tehtävän numero ja tuloste sivulle:
