@@ -117,6 +117,7 @@ for (let i = 0; i < 3; i++) {
   //Tehdään artikkeli:
   let new_article = document.createElement("article");
   new_article.setAttribute("class", "card");
+  new_article.setAttribute("pic_nro", `${pic_nro}`)
 
   //Tehdään heading:
   let new_heading = document.createElement("h2");
@@ -141,24 +142,63 @@ for (let i = 0; i < 3; i++) {
   new_text.innerText = picArray[pic_nro]["description"];
   new_article.appendChild(new_text);
 
+  //Syötetään script joka avaa ison kuvan.
+  //let new_script = document.createElement("script");
+  //new_script.inne
 
   //Syötetään Artikkeli
   target.appendChild(new_article);
 }
 
 
-///Nämä ei toimi: funktion pitää saada argumenttina minkä kuvan se avaa:
-//Pitää varmaan tehdä 3 eri funktiota?
-//let dialogi = document.getElementsByTagName("dialog");
-//let large_image = dialogi.getElementsByTagName("img");
 
-let nappula = document.querySelector(".card");
+//Fuktiot ison kuvan avaamiseksi ja sulkemiseksi:
 
-
-nappula.addEventListener("click", art_click);
-
-function art_click(event) {
-   console.log("Artikkelia klikattu")
-   console.log(event)
+function showModal(event) {
+  //Haetaan klikatun artikkelin numero:
+  console.log("showModal ajettu")
+  console.log(event);
+  console.log(event.target.closest(".card"));
+  let card_target = event.target.closest(".card");
+  let pic_nro_local = card_target.getAttribute("pic_nro");
+  console.log(pic_nro_local);
+  //Laitetaan dialogiin artikkelin iso kuva
+  dialog_image.src = picArray[pic_nro_local]["image"]["large"];
+  dialog_image.alt = picArray[pic_nro_local]["caption"];
+  dialogi.style.display = "block";
 }
-/////paskaa
+
+function close () {
+  console.log("close ajettu");
+  dialogi.style.display = "none";
+}
+
+//Määritellään dialogi
+let dialogi = document.getElementsByTagName("dialog")[0];
+let dialog_image = dialogi.querySelector("img");
+dialog_image.setAttribute("src", "");
+
+//Tehdään sulkemisnappula:
+let close_button = dialogi.querySelector("span");
+close_button.style.cursor = "pointer";
+close_button.addEventListener("click", close);
+
+
+//Toistorakenne hakee kaikki artikkelit ja luo nappulat joita klikata:
+let nappulat = [];
+let cards = document.querySelectorAll(".card");
+console.log(cards);
+for (let card of cards) {
+  let card_pic_nro = card.getAttribute("pic_nro");
+  console.log(card_pic_nro);
+  //tehdään nappula jolla on numero:
+  card.addEventListener("click", showModal);
+  nappulat.push(card);
+}
+
+
+
+
+
+
+
