@@ -122,6 +122,11 @@ form.addEventListener('submit', function(event) {
 })
 // .preventDefault(); estää konsolia nollautumasta.
 
+//Hyödyllinen tapa hakea:
+//Hakee input elementin jonka name attribuutti on "icao"
+let arvo = document.querySelector('input[name="icao"]').value;
+
+
 //////////////////////////////////////////////////////////////////////////////////////
 // Asynchronous fuctions
 
@@ -139,3 +144,4 @@ async function asynchronousFunction() {                 // asynchronous function
     }
 
 
+////////////////////////////////////////////////////////////////////////////////
