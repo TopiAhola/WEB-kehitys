@@ -13,3 +13,4 @@ Here is an example on how to use places/addresses with coordinates.
 To get coordinates from address, you can use address search
 If you get cors errors (which is likely not going to happen) use this fix.`
 
+// https://api.digitransit.fi/routing/v1/routers/hsl/index/graphql
