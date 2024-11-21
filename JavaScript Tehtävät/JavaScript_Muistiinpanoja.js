@@ -130,6 +130,10 @@ let arvo = document.querySelector('input[name="icao"]').value;
 //////////////////////////////////////////////////////////////////////////////////////
 // Asynchronous fuctions
 
+// .json() on asyncroninen ja vaatii await avainsanan. Response objektin pystyy kirjaamaan konsoliin
+// ennen kun sen arvot on palautettu palvelimesta, mutta sen arvoja ei voi kutsua etukäteen.
+// Siksi sekä fetch() ja .json() on await sanan jälkeen.
+
 async function asynchronousFunction() {                 // asynchronous function is defined by the async keyword
         console.log('asynchronous download begins');
         try {                                               // error handling: try/catch/finally
