@@ -2,12 +2,15 @@
 
 
 */
-
-
 'use strict';
 
-console.log("Im printing to console");
-alert("ponnahdusikkuna!");
+let tuloste;
+let a = 5;
 
-const tuloste = "tulostetaan tämä";
+if (!(a>10)) {console.log("a ei ole isompi kuin 10")}
+
+
+
+
+
 document.querySelector('#tulostusalue1').innerHTML = tuloste;

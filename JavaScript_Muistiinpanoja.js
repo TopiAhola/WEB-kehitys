@@ -130,6 +130,9 @@ let arvo = document.querySelector('input[name="icao"]').value;
 //////////////////////////////////////////////////////////////////////////////////////
 // Asynchronous fuctions
 
+//jos async funktiota joka palauttaa arvoja kutsuu pitää käyttää await avainsanaa jos haluaa, että pääohjelma odottaa palautuvaa arvoa:
+let odotettu_arvo = await asynchronousFunction();
+
 // .json() on asyncroninen ja vaatii await avainsanan. Response objektin pystyy kirjaamaan konsoliin
 // ennen kun sen arvot on palautettu palvelimesta, mutta sen arvoja ei voi kutsua etukäteen.
 // Siksi sekä fetch() ja .json() on await sanan jälkeen.
@@ -157,3 +160,19 @@ async function asynchronousFunction() {                 // asynchronous function
 
 
 ////////////////////////////////////////////////////////////////////////////////
+//Tämä esimerkki näyttää siltä, että this. viittaa literaaliin itseensä.
+//Käyttäytyykö samaan tapaan kuin self. pythonissa??
+
+The definition of an object literal can also contain functions. The example below creates an object for which the remaining number of credits required for the degree is calculated using a function. Finally, that credit is printed.
+
+const student2 = {
+      firstName: 'Ahmed',
+      lastName: 'Hussein',
+      credits :175,
+      hasLeft: function() {return 240-this.credits}
+    }
+
+console.log("Student " + student2.firstName + " is missing " + student2.hasLeft() + " credits.");
+
+////////////////////////////////////////////////////////////////////////////////
+
