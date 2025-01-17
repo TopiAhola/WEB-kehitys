@@ -1,0 +1,17 @@
+video {
+    display: block;
+    place-self: center;
+
+}
+
+#button_area {
+    display: block;
+    place-items: center;
+    place-content: center;
+}
+
+button {
+    /*display: inline-flex;
+    place-self: center; */
+
+}
